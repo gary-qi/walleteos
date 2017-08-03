@@ -29,11 +29,12 @@ export class ApplistComponent implements OnInit {
         }
 
         if (!localStorage.getItem("defaultMax")) {
-           localStorage.setItem("defaultMax", "1000");
+           localStorage.setItem("defaultMax", "5000");
         }
 
         var d = new Date();
-        d.setHours(d.getHours() - 24);
+//        d.setHours(d.getHours() - 23);
+        d.setTime(1501563600000);   -- 2017/08/01:1:00:00 AM Toronto
           
         this.text = localStorage.getItem("defaultMax");
         this.value = d;
