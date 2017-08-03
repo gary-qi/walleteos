@@ -1,7 +1,7 @@
 
 <div class="content-section implementation">
     <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none;text-align:right;">
-        <p-calendar [(ngModel)]="value" showTime="showTime" hourFormat="12"></p-calendar>
+        <p-calendar [(ngModel)]="value" showTime="showTime" hourFormat="24"></p-calendar>
         <input id="input" type="text" size="30" pInputText [(ngModel)]="text"> 
         <button pButton type="button" (click)="onclick()" label="Refresh"></button>
     </div>
